@@ -1,0 +1,17 @@
+{
+  "name": "punto-pagos",
+  "version": "1.0.0",
+  "description": "Recargas telefónicas y pago de servicios de TV desde la comodidad de tu casa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css && node-sass --include-path scss librerias/bootstrap/scss/bootstrap.scss librerias/bootstrap/css/bootstrap.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "David Bolívar <davidbolivar@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}

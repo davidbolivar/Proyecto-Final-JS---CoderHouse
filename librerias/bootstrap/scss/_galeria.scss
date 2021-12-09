@@ -1,0 +1,24 @@
+/* galeria */
+#galeria h2 {
+	width: 100%;
+}
+
+.grid_galeria {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+#galeria img:hover {
+	border: 10px solid white;
+	transition: transform 0.5s;
+	transform: scale(1.1) skew(0deg, 2deg);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#galeria div img {
+	width: 100%;
+	border-radius: 15px;
+}
